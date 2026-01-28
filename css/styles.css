@@ -1,32 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/* Los estilos se aplican a todo el documento */
 body {
-    background-image: linear-gradient(135deg , rgba(223, 181, 223, 0.3)), rgba(44,144,244,0) 
-    url('../assets/images/calacas.jpg');
-    background-repeat: no-repeat;
+    font-family: "BBH Bogle" sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+
+    /*foto de matrix de fondo*/
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8),rgb(50, 145, 56)),
+    url('../assets/images/matris.jpg');
     background-size: cover;
-    background-position: center;    
-    color: crimson
-    font-family "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-.sobre-mi{
-max-width: 800px;
-border-style: solid;
-border-radius: 20px;
-border-width: 1px;
-margin: auto;
-padding: 20px;
-background-image: linear-gradient(135deg, rgba(0,0,0,0.551)),rgba(0,31,0);
 }
-.sobre-mi h2 {
+
+/*Fondo blanco para el contenido principal del CV*/
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/*=====HEADER=====*/
+header {
+    color: white;
+    padding: 40px 20px;
     text-align: center;
+    
 
 }
-.social-icons{
-    width: 30px;
-    width: 30px;
+
+/*tamaño en mi nombre y carrera del encabezado*/
+.grannombre {
+    font-size: 45px;
+    margin-bottom: 10px;
 }
+.carrera {
+    font-size: 25px;
+}
+
+/*Espaciado y coloreado de los titulos de cada sección (Ej: Habilidades, Estudios, etc.)*/
+section {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+section h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+
+/*Titulo "sobre mi"*/
+#sobre-mi {
+    text-align: center;
+}
+
+/*Mi foto*/
+#sobre-mi img {
+    width: 300px;
+    height: 375px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 3px solid #2e4c46;
+}
+
+/*Descripción de mi - apartado "sobre mi"*/
+.descripcion {
+    text-align: justify;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Viñetas (puntos) en habilidades, hobbies y redes sociales*/
+#habilidades ul,
+#hobbies ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: none;
+}
+
+#redes-sociales li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 40px;
+}
+
+/*espaciado de textos entre los apartados habilidades y hobbies*/
+#habilidades li,
+#hobbies li {
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+
+/*fondo gris general para Descripcion, Habilidades, Estudios y Hobbies*/
+.descripcion,
+.Habilidades article,
+.Hobbies article,
+.estudios article,
+#redes-sociales ul {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+/*Nombre de titulos recibidos - apartado Estudios*/
+.maue,
+.puce {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Espaciado y color de textos (ej: Unidad educativa... - Pontificia...) en estudios*/
+.estudios p {
+    margin: 15px;
+    color: black;
+}
+
+/*color de texto (ej: Institución - Periodo) en estudios*/
+.estudios strong {
+    color: #333;
+}
+
+
+
+/* ========== REDES SOCIALES GENERAL ========== */
+
+/*Espaciado entre opciones de Redes Sociales*/
+#redes-sociales li {
+    margin-bottom: 20px;
+}
+
+/*Color y grosor de texto (ej: "LinkedIn", "GitHub", etc.) en redes sociales*/
+#redes-sociales a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*Tamaño e espaciado de iconos en redes sociales*/
+#redes-sociales img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* ========== FOOTER GENERAL ========== */
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
